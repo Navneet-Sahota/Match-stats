@@ -1,10 +1,6 @@
-import fs from "fs";
+import { CSVFileReader } from "./CSVFileReader";
 
-const matches = fs
-  .readFileSync("football.csv", {
-    encoding: "utf-8",
-  })
-  .split("\n")
-  .map((row: string): string[] => row.split(","));
+const reader = new CSVFileReader("football.csv");
+reader.read();
 
-console.log(matches);
+console.log(reader.data);
