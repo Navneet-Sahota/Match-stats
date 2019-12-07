@@ -12,6 +12,7 @@
   "author": "Navneet Sahota",
   "license": "ISC",
   "dependencies": {
+    "@types/node": "^12.12.14",
     "concurrently": "^5.0.0",
     "nodemon": "^2.0.1"
   }
